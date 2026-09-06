@@ -1501,4 +1501,67 @@ img {
 
 
     .footer-content {
-        flex-direction: c
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .footer-right {
+        text-align: left;
+    }
+
+
+    .social-links {
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 400px) {
+
+    .hero-card {
+        min-height: 270px;
+
+        padding: 25px;
+    }
+
+
+    .hero-card h3 {
+        font-size: 2rem;
+    }
+
+
+    .info-card {
+        padding: 14px;
+    }
+
+}
+
+
+/* =========================
+   REDUCE MOTION
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+    }
+
+}
